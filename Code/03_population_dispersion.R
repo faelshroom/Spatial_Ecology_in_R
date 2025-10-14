@@ -18,3 +18,18 @@ rana
  values      :          1
                         0
                         1
+plot(rana)
+#but the par from before is still valid so we destroy it and replot it
+> dev.off()
+null device 
+          1 
+plot(rana)
+#this is the distribution of the occurrencies
+rana$Occurrence
+  [1] 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1 1 0 1 1 0 0 1 0 1 1 0 1 0 1 0 1 0 1 1 1 1
+ [37] 0 1 0 0 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 1 1 1 1 0 0 1 0 1 0 1 1 1 1 0 0
+ [73] 0 0 0 1 0 0 1 0 1 0 1 1 1 0 0 1 1 0 0 1 1 1 1 0 0 0 0 0 0 0 1 1 1 0 0 1
+[109] 1 0 0 0 1 0 0 1 1 1 1 1 0 0 0 1 1 0 0 1 1 1 1 1 0 0 0 1 0 0 1 1 0 1 0 1
+[145] 0 0 1 1 0 0 1 0 0 1 1 0 0 0 0 1 1 1 0 0 0 0 1 0 0 1 0 1 0 0 0 0 1 0 1 0
+[181] 1 0 1 0 0 0 0 1 1 0 1 0 1 1 0 1 0 0 0 0
+#data stored for each of these points
