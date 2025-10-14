@@ -80,4 +80,24 @@ null device
 > #if we don't want the graphs to turn out all small then we should either use R and not Rstudio or zoom in
 > cl<-colorRampPalette(c("maroon1","blue", "lightblue")) 
 > plot(dmap,col=cl)
-> #avoid rainbow color palette
+> #avoid rainbow color palette bc of colorblind people
+cl<-colorRampPalette(c("maroon1","blue", "lightblue")) (100)
+> plot(dmap,col=cl)
+> cl<-colorRampPalette(c("maroon1","blue", "lightblue")) (3)
+> plot(dmap,col=cl)
+> cl<-colorRampPalette(c("maroon1","blue", "lightblue")) (100)
+> plot(dmap,col=cl)
+> cl<-colorRampPalette(c("maroon1","blue", "lightblue","darksagegreen1")) (100)
+Errore in col2rgb(colors, alpha = alpha) : 
+  nome colore 'darksagegreen1' non valido
+
+> cl<-colorRampPalette(c("maroon1","blue", "lightblue","darkseagreen1")) (100)
+> plot(dmap,col=cl)
+> cl<-colorRampPalette(c("maroon1","blue", "lightblue","darkseagreen")) (100)
+> plot(dmap,col=cl)
+> cl<-colorRampPalette(c("maroon1","blue", "lightblue")) (100)
+> plot(dmap,col=cl)
+> #plot the dmap with two different color ramps one on top of the other
+par(mfrow=c(2,1))
+> plot(dmap,col=cl)
+> plot(dmap,col=cln)
