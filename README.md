@@ -14,7 +14,7 @@ while "+" makes a list
 
 
 
-##Lezione 09/10
+# Lezione 09/10
 
 Spatial structure of populatioins, communities and ?
 
@@ -46,6 +46,9 @@ the threshold of human beings in the graph is when a limitng factor is reached l
 division of species into r and K species, depending also on the competition value
 
 Metapopulaions are groups of populations linked by immigration and emigration, higher survival can result in greater stability in populations
+
+# Lezione 14/10
+
 
 
 
