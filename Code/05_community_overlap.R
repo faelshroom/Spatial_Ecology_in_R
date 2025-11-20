@@ -24,11 +24,11 @@ summary(kerinci)
                  (Other): 53       
 #translate the data from 0 to 1, to 0 to 160 e.g. 
 #we do 2*pi to have the complete circle from a linear
-kerincitimecirc<-kerinci$Time* 2*pi
-circulartime<-kerinci$Time* 2*pi
+kerincitimecirc<-kerinci$Time * 2 * pi
+circulartime<-kerinci$Time * 2 * pi
 circulartime
 #shows very long graph usseless, to have it more compact we can:
-kerinci$circ<-kerinci$Time* 2*pi
+kerinci$circ<-kerinci$Time * 2 * pi
 > head(kerinci)
   Zone   Sps  Time     circ
 1    1 tiger 0.175 1.099557
@@ -40,12 +40,25 @@ kerinci$circ<-kerinci$Time* 2*pi
 
 #subsets from kerinci into the new dataset which only considers the new target
 tiger<-kerinci[kerinci$Sps=="tiger",] #comma to stop the commandx
-#now i can create an object to create a singular time for the dataset
+#now i can create an object to create a singular time for the dataset, with the histograms that are now continuous
 timetiger<-kerinci$circ
 plot(timetiger)
 #see Notion for the result of the plot command
-#its' wrong
+#it's wrong
 timetiger<-tiger$circ
 densityPlot(timetiger)
 #right one is up now
+#he also wrote another version of this, but it's the same
+
+#exercise: create a kernel density plot for the species macaque
+macaque<-kerinci[kerinci$Sps=="macaque",]
+?????
+desnityPlot(macaque$Timecirc)
+densityPlot(macaquetime)
+overlapPlot(tigertime, macaquetime)
+#problem with the vectors?
+Errore in checkInput(A) : 
+  The times of observations must be in a numeric vector.
+
+
 
